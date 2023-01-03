@@ -5,7 +5,13 @@ const taskCounter = document.getElementById('tasks-counter');
 
 console.log('working');
 
-function renderList (){}
+function renderList (){
+        taskList.innerHTML = '';
+
+        for (let i = 0; i < tasks.length; i++){
+                addTaskToDOM(tasks[i]);
+        }
+}
 
 function toggleTask (taskId){
         const task = tasks.filter(function (task){
