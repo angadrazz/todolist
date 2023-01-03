@@ -11,7 +11,7 @@ function markTaskAsComplete (taskId){}
 
 function deleteTask (taskId){}
 
-function addTask (task)()
+function addTask (task){}
 
 function showNotification (text){
         alert(text);
