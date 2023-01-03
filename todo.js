@@ -1,4 +1,4 @@
-const tasks = [];
+let tasks = [];
 const taskList = document.getElementById('list');
 const addTaskInput = document.getElementById('add');
 const taskCounter = document.getElementById('tasks-counter');
@@ -9,7 +9,11 @@ function renderList (){}
 
 function markTaskAsComplete (taskId){}
 
-function deleteTask (taskId){}
+function deleteTask (taskId){
+        const newTasks = tasks.filter(function(task){
+                return task.id != taskId
+        })
+}
 
 function addTask (task){
         if (task) {
