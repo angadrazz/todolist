@@ -13,6 +13,10 @@ function deleteTask (taskId){
         const newTasks = tasks.filter(function(task){
                 return task.id != taskId
         })
+
+        tasks = newTasks;
+        renderList();
+        showNotification('Task Deleted Successfully');
 }
 
 function addTask (task){
