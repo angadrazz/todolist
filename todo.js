@@ -11,6 +11,7 @@ function renderList (){
         for (let i = 0; i < tasks.length; i++){
                 addTaskToDOM(tasks[i]);
         }
+   taskCounter.innerHTML = tasks.length;
 }
 
 function toggleTask (taskId){
