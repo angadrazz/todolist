@@ -25,6 +25,11 @@ function handleInputKeypress (e){
                         showNotification('The task can not be empty');
                         return;
                 }
+                 const task = {
+                        text,
+                        id: Date.now().toString(),
+                        done: false
+                 }
         }
 }
 
