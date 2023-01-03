@@ -29,4 +29,4 @@ function handleInputKeypress (e){
 }
 
 
-addTaskInput.addEventListener
+addTaskInput.addEventListener('keyup', handleInputKeypress);
