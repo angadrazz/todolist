@@ -5,6 +5,18 @@ const taskCounter = document.getElementById('tasks-counter');
 
 console.log('working');
 
+function addTaskToDOM(task){
+        const li = document.createElement('li');
+
+     li.innerHTML = `
+     <li>
+                <input type="checkbox" id="${task.id}" data-id="12" class="custom-checkbox">
+                <label for="${task.id}">${task.text}</label>
+                <img src="https://www.svgrepo.com/show/171102/delete.svg" class="delete" data-id="12">
+                </li>
+     `;
+}
+
 function renderList (){
         taskList.innerHTML = '';
 
