@@ -20,6 +20,7 @@ function showNotification (text){
 function handleInputKeypress (e){
         if (e.key == 'Enter') {
                 const text = e.target.value;
+                console.log('text', text);
 
                 if(!text) {
                         showNotification('The task can not be empty');
@@ -30,6 +31,8 @@ function handleInputKeypress (e){
                         id: Date.now().toString(),
                         done: false
                  }
+                 e.target.value = '';
+                 addTask(task);
         }
 }
 
