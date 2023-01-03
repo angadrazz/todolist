@@ -15,6 +15,8 @@ function addTaskToDOM(task){
                 <img src="https://www.svgrepo.com/show/171102/delete.svg" class="delete" data-id="${task.id}">
                 </li>
      `;
+
+     taskList.append(li);
 }
 
 function renderList (){
