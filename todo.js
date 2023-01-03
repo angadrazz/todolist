@@ -10,9 +10,9 @@ function addTaskToDOM(task){
 
      li.innerHTML = `
      <li>
-                <input type="checkbox" id="${task.id}" data-id="12" class="custom-checkbox">
+                <input type="checkbox" id="${task.id}" data-id="${task.id}" class="custom-checkbox">
                 <label for="${task.id}">${task.text}</label>
-                <img src="https://www.svgrepo.com/show/171102/delete.svg" class="delete" data-id="12">
+                <img src="https://www.svgrepo.com/show/171102/delete.svg" class="delete" data-id="${task.id}">
                 </li>
      `;
 }
