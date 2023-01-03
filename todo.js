@@ -11,7 +11,13 @@ function markTaskAsComplete (taskId){}
 
 function deleteTask (taskId){}
 
-function addTask (task){}
+function addTask (task){
+        if (task) {
+                tasks.push(task);        }
+                renderList();
+                showNotification('Task addedsuccessfully');
+                return;
+}
 
 function showNotification (text){
         alert(text);
