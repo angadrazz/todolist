@@ -17,7 +17,10 @@ function toggleTask (taskId){
 
                 currentTask.done =! currentTask.done; 
                 renderList();
+                showNotification('Task toggle successfully');
+                return;
         }
+        showNotification('Could not task the toggle');
 }
 
 function deleteTask (taskId){
