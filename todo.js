@@ -19,7 +19,7 @@ function addTask (task){
         if (task) {
                 tasks.push(task);        }
                 renderList();
-                showNotification('Task addedsuccessfully');
+                showNotification('Task added successfully');
                 return;
 }
 
