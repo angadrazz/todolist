@@ -12,7 +12,7 @@ function addTaskToDOM(task){
      <li>
                 <input type="checkbox" id="${task.id}" ${task.done ? 'checked' : ''} data-id="${task.id}" class="custom-checkbox">
                 <label for="${task.id}">${task.text}</label>
-                <img src="https://www.svgrepo.com/show/171102/delete.svg" class="delete" data-id="${task.id}">
+                <img src="" class="delete" data-id="${task.id}">
                 </li>
      `;
 
