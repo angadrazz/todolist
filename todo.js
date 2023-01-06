@@ -1,7 +1,7 @@
 let tasks = [];
 const taskList = document.getElementById('list');
 const addTaskInput = document.getElementById('add');
-const taskCounter = document.getElementById('tasks-counter');
+const taskCounter = document.getElementById('task-counter');
 
 console.log('working');
 
@@ -56,7 +56,8 @@ function deleteTask (taskId){
 
 function addTask (task){
         if (task) {
-                tasks.push(task);        }
+                tasks.push(task);
+        }
                 renderList();
                 showNotification('Task added successfully');
                 return;
