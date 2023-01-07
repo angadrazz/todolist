@@ -5,13 +5,17 @@ const taskCounter = document.getElementById('task-counter');
 
 console.log('working');
 
+function fetchTodos (){
+
+}
+
 function addTaskToDOM(task){
         const li = document.createElement('li');
 
      li.innerHTML = `
      <li>
-                <input type="checkbox" id="${task.id}" ${task.done ? 'checked' : ''} data-id="${task.id}" class="custom-checkbox">
-                <label for="${task.id}">${task.text}</label>
+                <input type="checkbox" id="${task.id}" ${task.completed ? 'checked' : ''} data-id="${task.id}" class="custom-checkbox">
+                <label for="${task.id}">${task.title}</label>
                 <img src="./image/delete.png" class="delete" data-id="${task.id}">
                 </li>
      `;
@@ -36,7 +40,7 @@ function toggleTask (taskId){
         if (task.length > 0){
                 const currentTask = task[0];
 
-                currentTask.done =! currentTask.done; 
+                currentTask.completed =! currentTask.completed; 
                 renderList();
                 showNotification('Task toggle successfully');
                 return;
@@ -103,6 +107,11 @@ function handleClickLister(e){
    }
 }
 
+function initializeApp (){
+        fetchTodos();
+        addTaskInput.addEventListener('keyup', handleInputKeypress);
+        document.addEventListener('click', handleClickLister);
+}
 
-addTaskInput.addEventListener('keyup', handleInputKeypress);
-document.addEventListener('click', handleClickLister);
+
+initializeApp();
