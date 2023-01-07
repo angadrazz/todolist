@@ -91,6 +91,8 @@ function handleClickLister(e){
    console.log(target);
 
    if (target.className == 'delete'){
+        let taskId = target.dataset.id;
+        deleteTask(taskId);
     } else if(target.className == 'custom-checkbox'){
 
         
