@@ -10,6 +10,13 @@ function fetchTodos (){
   .then(function (response){
         console.log(response);
         return response.json();
+  }).then(function (data){
+        tasks = data.slice(1, 102);
+        renderList();
+        console.log(data);
+  })
+  .catch(function (error){
+        console.log('error', error);
   })
 }
 
