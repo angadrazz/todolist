@@ -57,7 +57,14 @@ function toggleTask (taskId){
         showNotification('Could not task the toggle');
 }
 
+
+
 function deleteTask (taskId){
+        if (confirm(tasks) == true) {
+                alert('You can Click OK then task will be deleted otherwise cancle')
+              } else {
+                return false;
+              }
         const newTasks = tasks.filter(function(task){
                 return task.id != taskId
         })
@@ -65,6 +72,7 @@ function deleteTask (taskId){
         tasks = newTasks;
         renderList();
         showNotification('Task Deleted Successfully');
+       
 }
 
 function addTask (task){
