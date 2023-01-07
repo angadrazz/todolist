@@ -89,6 +89,12 @@ function handleInputKeypress (e){
 function handleClickLister(e){
    let target = e.target;
    console.log(target);
+
+   if (target.className == 'delete'){
+    } else if(target.className == 'custom-checkbox'){
+
+        
+   }
 }
 
 
