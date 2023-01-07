@@ -6,7 +6,10 @@ const taskCounter = document.getElementById('task-counter');
 console.log('working');
 
 function fetchTodos (){
-
+  fetch('https://jsonplaceholder.typicode.com/todos')
+  .then(function (response){
+        console.log(response);
+  })
 }
 
 function addTaskToDOM(task){
