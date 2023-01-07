@@ -87,7 +87,8 @@ function handleInputKeypress (e){
 }
 
 function handleClickLister(e){
-   handle click 
+   let target = e.target;
+   console.log(target);
 }
 
 
