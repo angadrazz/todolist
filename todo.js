@@ -9,6 +9,7 @@ function fetchTodos (){
   fetch('https://jsonplaceholder.typicode.com/todos')
   .then(function (response){
         console.log(response);
+        return response.json();
   })
 }
 
