@@ -6,3 +6,7 @@ h1 {
 .delete {
         font-size: 10px;
 }
+
+img {
+        cursor: pointer;
+}
