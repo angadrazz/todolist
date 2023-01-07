@@ -61,7 +61,7 @@ function toggleTask (taskId){
 
 function deleteTask (taskId){
         if (confirm(tasks) == true) {
-                alert('You can Click OK then task will be deleted otherwise cancle')
+                alert('You can Click OK then task will be deleted otherwise cancle');
               } else {
                 return false;
               }
