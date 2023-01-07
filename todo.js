@@ -86,5 +86,10 @@ function handleInputKeypress (e){
         }
 }
 
+function handleClickLister(e){
+   handle click 
+}
+
 
 addTaskInput.addEventListener('keyup', handleInputKeypress);
+document.addEventListener('click', handleClickLister);
