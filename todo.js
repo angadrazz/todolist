@@ -3,8 +3,6 @@ const taskList = document.getElementById('list');
 const addTaskInput = document.getElementById('add');
 const taskCounter = document.getElementById('task-counter');
 
-console.log('working');
-
 function fetchTodos (){
   fetch('https://jsonplaceholder.typicode.com/todos')
   .then(function (response){
